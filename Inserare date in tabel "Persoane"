@@ -1,0 +1,14 @@
+INSERT INTO [dbo].[Persoane]
+           ([Id]
+           ,[Nume]
+           ,[Prenume]
+           ,[Email]
+           ,[Telefon]
+           ,[Adresa])
+     VALUES
+           (4,
+           'Decebal',
+           'Traian',
+           'decebal.traian@email.ro',
+           '0256999999',
+           'Timisoara, str. Centrului nr.100')
