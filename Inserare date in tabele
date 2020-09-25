@@ -1,0 +1,43 @@
+USE [Companie]
+GO
+
+INSERT INTO [dbo].[Departament]
+           ([Id]
+           ,[Denumire]
+           ,[Cod])
+     VALUES
+           (1,  'Productie',  'P001'),
+	   (2,  'Vanzari',    'V001'),
+	   (3,'Economic',     'E001')
+	   
+	   INSERT INTO [dbo].[Clienti]
+           ([Id]
+           ,[IdPersoana]
+           ,[IdCardFidelitate])
+     VALUES
+           (1, 2, 1),
+	   (2, 3, 2)
+	  
+	  
+INSERT INTO [dbo].[Angajati]
+           ([Id]
+           ,[IdPersoana]
+           ,[IdDepartament])
+     VALUES
+           (1, 1,  1),
+	   (2, 2,  2),
+	   (3, 4,  3)
+	   
+INSERT INTO [dbo].[Produse]
+           ([Id]
+           ,[CodPRodus]
+           ,[Descriere]
+           ,[UM]
+           ,[PretUnitar])
+     VALUES
+           (1,'111101', 'Cuie 70mm', 'Kg', 5.50),
+	   (2,'111102', 'Cuie 50mm', 'Kg', 4.50),
+	   (3,'111103', 'Sarma 3mm', 'Kg', 3.50),
+	   (4,'111104', 'Tabla', 'buc', 20.30),
+	   (5,'111106', 'Fier otel 8mm', 'Kg', 3.30)
+GO
