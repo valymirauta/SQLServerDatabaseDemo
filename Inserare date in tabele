@@ -1,6 +1,20 @@
 USE [Companie]
 GO
 
+INSERT INTO [dbo].[Persoane]
+           ([Id]
+           ,[Nume]
+           ,[Prenume]
+           ,[Email]
+           ,[Telefon]
+           ,[Adresa])
+     VALUES
+          
+	(1,  'Popescu',   'Maria',   'popescu.maria@email.ro ',   '0770111111',  'Timisoara, str. Libertatii nr.2'),
+        (2,  'Decebal',   'Traian',  'decebal.traian@email.ro',   '0256999999',  'Timisoara, str. Centrului nr.100'),
+        (3,  'Ionescu',   'Ion',  'ionescu.ion@gmail.com  ', '0774222222',  'Iasi, str. Eternitatii nr. 80'),
+        (4,   'Marin',     'Marin',  'Marin.marin@gil.com    ', '0777888888', 'Timisoara, str. Cugir nr. 4')
+
 INSERT INTO [dbo].[Departament]
            ([Id]
            ,[Denumire]
