@@ -11,7 +11,11 @@ Se creeaza urmatoarele tabele:
 -Produse
  <img src="https://github.com/valymirauta/SQLServerDatabaseDemo/blob/master/companieER.JPG" width="350" height="256" title="Login">
  
+ Cateva operatii cu datele din tabele:
+ 
  SELECT Nume, Prenume, Adresa , DataComanda FROM persoane p INNER JOIN Comenzi c ON p.Id=c.IdPersoana
  
  SELECT * FROM Produse
+ 
+ UPDATE Produse SET PretUnitar = 6.5 WHERE Id=1
   
