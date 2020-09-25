@@ -10,4 +10,6 @@ Se creeaza urmatoarele tabele:
   -Detalii comenzi
 -Produse
  <img src="https://github.com/valymirauta/SQLServerDatabaseDemo/blob/master/companieER.JPG" width="350" height="256" title="Login">
+ 
+ SELECT Nume, Prenume, Adresa , DataComanda FROM persoane p INNER JOIN Comenzi c ON p.Id=c.IdPersoana
   
