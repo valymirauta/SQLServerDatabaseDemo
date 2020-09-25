@@ -1,0 +1,24 @@
+SELECT Nume, Prenume, Adresa , DataComanda FROM persoane p INNER JOIN Comenzi c ON p.Id=c.IdPersoana
+
+Nume	    Prenume	              Adresa	              DataComanda
+Popescu  	Maria    	Timisoara, str. Libertatii nr.2    	2020-06-20
+Decebal 	Traian    Timisoara, str. Centrului nr.100    2020-08-22
+Popescu  	Maria     Timisoara, str. Libertatii nr.2    	2020-08-25
+
+
+SELECT * FROM Produse
+
+Id	CodPRodus 	Descriere	        UM	    PretUnitar
+1 	111101    	Cuie 70mm        	Kg      	5,5
+2 	111102    	Cuie 50mm        	Kg      	4,5
+3	  111103    	Sarma 3mm        	Kg   	    3,5
+4	  111104    	Tabla            	buc   	  20,3
+5	  111106    	Fier otel 8mm    	Kg   	    3,3
+
+UPDATE Produse SET PretUnitar = 6.5 WHERE Id=1
+ 
+Id	CodPRodus	    Descriere   	UM	 PretUnitar
+1	    111101    	Cuie 70mm      Kg   	6,5
+
+
+
