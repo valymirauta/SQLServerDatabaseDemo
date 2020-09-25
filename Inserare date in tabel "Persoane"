@@ -6,9 +6,22 @@ INSERT INTO [dbo].[Persoane]
            ,[Telefon]
            ,[Adresa])
      VALUES
-           (4,
+          
+		  (1,
+           'Popescu',
+           'Maria',
+           'popescu.maria@email.ro   ',
+           '0770111111',
+           'Timisoara, str. Libertatii nr.2'),
+		   (2,
            'Decebal',
            'Traian',
            'decebal.traian@email.ro',
            '0256999999',
-           'Timisoara, str. Centrului nr.100')
+           'Timisoara, str. Centrului nr.100'),
+		     (3,
+           'Ionescu',
+           'Ion',
+           'ionescu.ion@gmail.com    ',
+           '0774222222',
+           'Iasi, str. Eternitatii nr. 80')
