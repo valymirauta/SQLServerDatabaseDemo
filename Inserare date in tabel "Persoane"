@@ -24,4 +24,10 @@ INSERT INTO [dbo].[Persoane]
            'Ion',
            'ionescu.ion@gmail.com    ',
            '0774222222',
-           'Iasi, str. Eternitatii nr. 80')
+           'Iasi, str. Eternitatii nr. 80'),
+		       (4,
+           'Marin',
+           'Marin',
+           'Marin.marin@gil.com    ',
+           '0777888888',
+           'Timisoara, str. Cugir nr. 4')
