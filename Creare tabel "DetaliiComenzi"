@@ -1,0 +1,31 @@
+USE [Companie]
+GO
+
+/****** Object:  Table [dbo].[DetaliiComenzi]    Script Date: 25.09.2020 10:03:12 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[DetaliiComenzi](
+	[IdComanda] [int] NOT NULL,
+	[IdProdus] [int] NOT NULL,
+	[Cantitate] [int] NOT NULL,
+	[Valoare] [float] NOT NULL
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[DetaliiComenzi]  WITH CHECK ADD  CONSTRAINT [FK_DetaliiComenzi_Comenzi] FOREIGN KEY([IdComanda])
+REFERENCES [dbo].[Comenzi] ([Id])
+GO
+
+ALTER TABLE [dbo].[DetaliiComenzi] CHECK CONSTRAINT [FK_DetaliiComenzi_Comenzi]
+GO
+
+ALTER TABLE [dbo].[DetaliiComenzi]  WITH CHECK ADD  CONSTRAINT [FK_DetaliiComenzi_Produse] FOREIGN KEY([IdProdus])
+REFERENCES [dbo].[Produse] ([Id])
+GO
+
+ALTER TABLE [dbo].[DetaliiComenzi] CHECK CONSTRAINT [FK_DetaliiComenzi_Produse]
+GO
