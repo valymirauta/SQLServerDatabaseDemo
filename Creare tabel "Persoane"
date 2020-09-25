@@ -1,0 +1,23 @@
+USE [Companie]
+GO
+
+/****** Object:  Table [dbo].[Persoane]    Script Date: 25.09.2020 09:43:02 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Persoane](
+	[Id] [int] NOT NULL,
+	[Nume] [nchar](25) NOT NULL,
+	[Prenume] [nchar](25) NOT NULL,
+	[Email] [nchar](25) NULL,
+	[Telefon] [nchar](10) NULL,
+	[Adresa] [nchar](255) NOT NULL,
+ CONSTRAINT [PK_Persoane] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
