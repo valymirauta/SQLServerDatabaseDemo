@@ -7,8 +7,8 @@ Se creeaza urmatoarele tabele:
     - Clienti
     
 -Departamente
--Comenzi
 
+-Comenzi
   -Detalii comenzi
   
 -Produse
